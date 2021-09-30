@@ -1,0 +1,55 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "plugin:react/recommended",
+        "airbnb",
+        "prettier"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 12,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "@typescript-eslint",
+        "prettier"
+    ],
+    "overrides": [
+      {
+          "files": [
+          "**/*.test.ts",
+          "**/*.test.tsx"
+          ],
+          "env": {
+          "jest": true
+          }
+      }
+    ],
+    "rules": {
+      // "prettier/prettier": "error",
+      "react/jsx-filename-extension": [1, { "extensions": [".tsx"]}],
+      "import/prefer-default-export": "off",
+      "import/no-unresolved": "off",
+      "react/react-in-jsx-scope": "off",
+      "react/jsx-props-no-spreading": "off",
+      "import/extensions": "off",
+      "no-use-before-define": "off",
+      "react/prop-types": "off",
+      "no-unused-vars": "off",
+      "no-proto": "off",
+      "no-shadow": "off",
+      "jsx-a11y/label-has-associated-control": "off",
+      "react/require-default-props": "off",
+      "camelcase": "off",
+      "no-script-url": "off",
+      "prefer-const": "off",
+      "jsx-a11y/control-has-associated-label": "off"
+    }
+}
